@@ -8,7 +8,13 @@
 <p th:inline="text"> The employee's name is [[${person.firstname}]] [[${person.lastname}]] .<br />
     The employee's SSN is [[${person.ssn}]].<br />
     The employee's DOB is [[${person.dob}]].<br />
+    The employee's job is [[${person.job.name}]].<br />
+
+
 
 </p>
+<h2 th:text="${person.checked}"></h2>
+<h2 th:text="${person.job.name}"></h2>
+
 </body>
 </html>

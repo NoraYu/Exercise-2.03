@@ -5,7 +5,24 @@ public class Employee {
     private String lastname;
     private long ssn;
     private int dob;
+    private boolean checked;
+    private Job job;
 
+    public Job getJob() {
+        return job;
+    }
+
+    public void setJob(Job job) {
+        this.job = job;
+    }
+
+    public boolean isChecked() {
+        return checked;
+    }
+
+    public void setChecked(boolean checked) {
+        this.checked = checked;
+    }
 
     public String getFirstname() {
         return firstname;

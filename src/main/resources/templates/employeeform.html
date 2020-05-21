@@ -9,8 +9,26 @@
     First Name:<input type="text" th:field="*{firstname}"/><br />
     Last Name:<input type="text" th:field="*{lastname}"/><br />
     SSN:<input type="number" th:field="*{ssn}"/><br />
-    DOB:<input type="number" th:field="*{dob}"/><br />
+    checked:<input type="checkbox" th:field="*{checked}"/><br />
+
+    <div  th:object="${job}">
+     Job:   <input type="text" th:field="*{name}">
+    </div>
+
+   random <input type="text" name="random">
+
+
+<!--    <form th:object="${job}">-->
+<!--        job: <input type="text" th:field="*{name}">-->
+<!--        </br>-->
+<!--        <input type="submit" value="Submit"/>-->
+<!--    </form>-->
+
+
     <input type="submit" value="Submit"/>
+
 </form>
+
+
 </body>
 </html>
